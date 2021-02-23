@@ -1,13 +1,71 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #F5F1EE
+  ;
 }
+h4{
+  color: #4E629A;
+}
+h5{
+  color: #88719A;
+}
+h5,
+h4, img {
+  padding-left: 10px;
+  font-size: medium;
+  font-weight: bold;
+}
+img {
+  width: 160px;
+  height: 120px;
+}
+.booklist{
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+  /* align-items: start; */
+} 
+@media screen and (min-width: 768px) {
+  .booklist{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.book{
+  background-color: #EEE4D6;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+.book h4{
+  margin-top: .5rem;
+}
+.book p{
+  margin-top: .5rem;
+}
+/* #authorName {
+  color: blueviolet;
+}
+.bookImg {
+  border-radius: 10%;
+}
+.mainImage,
+.sideImage {
+  border-radius: 10%;
+}
+/* .col-sm-5 {
+  margin-right: 0px;
+
+} */
+
+/* .mainImage {
+  width: 650px;
+  height: 555;
+}
+ */ 

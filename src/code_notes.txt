@@ -1,0 +1,41 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+//stateless functional components
+//always MUST return jsx
+//use proper html structure to avoid div soup
+//<React.fragment></React.fragment> works as the containing html component
+//<></> can replace the above statement
+//className replaces class in JSX
+//html uses camelCase now
+
+const Greetings = () => {
+  return React.createElement(
+    "h3",
+    {},
+    "I am a component represented by an arrow function. I include three paramentsers: the element to be created, the props object {}, and the value, in this case, the string to br represented"
+  );
+};
+function SubGreeting() {
+  return (
+    <React.Fragment>
+      <h4>Lets see how this goes.</h4>
+    </React.Fragment>
+  );
+}
+const Person = () => {
+  return <h5>-Steph</h5>;
+};
+function Greeting() {
+  //functions must be capatolized at the first letter. to show that it is a component.
+  return (
+    <div>
+      <h1>hi there! This is my first component :D</h1>
+      <SubGreeting />
+      <Greetings />
+      <Person />
+    </div>
+  );
+}
+
+ReactDOM.render(<Greeting />, document.getElementById("root"));
